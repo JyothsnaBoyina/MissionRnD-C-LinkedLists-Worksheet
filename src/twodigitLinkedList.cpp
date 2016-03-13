@@ -21,6 +21,38 @@ struct node {
 	struct node *next;
 };
 
+
+int pow(int, int);
+
 int convert_sll_2digit_to_int(struct node *head){
-	return 0;
+
+	int l=0,i=0,d1,d2,n,result=0,a;
+	struct node *temp;
+	temp = head;
+	while (temp != NULL)
+	{
+		temp = temp->next;
+		l++;
+	}
+	temp = head;
+	while (i <l)
+	{
+		d1 = temp->digit1;
+		d2 = temp->digit2;
+		n = d1 * 10 + d2;
+		a=pow(1, l - (2 * i));
+		result = result + (n*a);
+		temp = temp->next;
+		i++;
+	}
+
+	return result;
+}
+
+int pow(int a, int b)
+{
+	int i;
+	for (i = 0; i <= b; i++)
+		a = a * 10;
+	return a;
 }

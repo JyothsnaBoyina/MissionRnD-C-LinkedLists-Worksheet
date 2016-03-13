@@ -26,17 +26,27 @@ Objectives of C-LinkedLists-1 Lesson:
 #include <stdio.h>
 #include "FunctionHeadersLinkedLists1.h"
 
+#include <malloc.h>
+
+
 int main(){
 
 	//Test 012SortSll
 
+	
+
 	//Test numberToLinkedList
+	
 
 	//Test removeEveryKthNode
+	
+	
 
 	//Test sortLinkedList
 
+	
 	//Test twodigitLinkedList
+	
 
-	return 0;
+	return 0; 
 }
